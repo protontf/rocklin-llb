@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.modal-90w {
+  width: 90% !important;
+  max-width: none !important;
+}
+.white-text {
+  color: #fff;
+}

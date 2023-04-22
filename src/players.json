@@ -1,34 +1,68 @@
 [
     {
       "id": 1,
-      "name": "name 1"
+      "name": "Yggy",
+      "imagesrc": "./logo512.png",
+      "jersey": 2
     },
     {
       "id": 2,
-      "name": "name 2"
+      "name": "Levi",
+      "imagesrc": "./logo512.png",
+      "jersey": 6
     },
     {
       "id": 3,
-      "name": "name 3"
+      "name": "Dylan",
+      "imagesrc": "./logo512.png",
+      "jersey": 5
     },
     {
       "id": 4,
-      "name": "name 4"
+      "name": "Brandon",
+      "imagesrc": "./logo512.png",
+      "jersey": 10
     },
     {
       "id": 5,
-      "name": "name 5"
+      "name": "Nick",
+      "imagesrc": "./logo512.png",
+      "jersey": 11
     },
     {
       "id": 6,
-      "name": "name 6"
+      "name": "Emmett",
+      "imagesrc": "./logo512.png",
+      "jersey": 8
     },
     {
       "id": 7,
-      "name": "name 7"
+      "name": "Kaden",
+      "imagesrc": "./logo512.png",
+      "jersey": 3
     },
     {
       "id": 8,
-      "name": "name 8"
+      "name": "Leo",
+      "imagesrc": "./logo512.png",
+      "jersey": 7
+    },
+    {
+      "id": 9,
+      "name": "Anthony",
+      "imagesrc": "./logo512.png",
+      "jersey": 9
+    },
+    {
+      "id": 10,
+      "name": "Raylen",
+      "imagesrc": "./logo512.png",
+      "jersey": 1
+    },
+    {
+      "id": 11,
+      "name": "Jack",
+      "imagesrc": "./logo512.png",
+      "jersey": 4
     }
 ]
