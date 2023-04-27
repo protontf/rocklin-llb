@@ -50,13 +50,13 @@ export default function App() {
                     <Navbar.Brand>
                         <img
                             alt="Rocklin LLB Padres"
-                            src="./images/padres_logo.png"
-                            height="50"
+                            src="/images/padres_logo.png"
+                            height="80"
                             className="d-inline-block align-top"
                             />{' '}
-                        Padres
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <h2>Rocklin LIttle league</h2>
+                    <Navbar.Brand>Minor AAA</Navbar.Brand>
                 </Container>
             </Navbar>
             <PlayerDetails />
