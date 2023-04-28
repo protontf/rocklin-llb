@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.padres-color {
+  color: rgb(255, 196, 37);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,6 +31,15 @@
 }
 .navbar-brand, .navbar h2 {
   color: rgb(255, 196, 37) !important;
+}
+.padres-border {
+  border-color: rgb(255, 196, 37) !important;
+}
+.padres-footer {
+  background: rgb(255, 196, 37);
+}
+.footer-logo {
+  max-width: 180px;
 }
 @keyframes App-logo-spin {
   from {
