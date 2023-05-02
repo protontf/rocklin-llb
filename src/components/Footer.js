@@ -5,7 +5,7 @@ const Footer = () =>
         <div className="container-fluid text-center">
             <div className="row justify-content-center">
                 <div className="col-md-3">
-                    <small>Powered By<br></br></small>
+                    <small>Brought To You By<br></br></small>
                     <a href="https://targetsunlimited.com" >
                         <img src="/images/targetsunlimited.png" alt="Targets Unlimited" className="footer-logo"/>
                     </a>
