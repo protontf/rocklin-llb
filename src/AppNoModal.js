@@ -4,6 +4,8 @@ import players from './players.json'
 import "./App.css";
 import "./bootstrap.min.css"
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Footer from './components/Footer';
@@ -12,31 +14,38 @@ import Navbar from 'react-bootstrap/Navbar';
 export function PlayerDetails() {
     return (
         <>
-            <div className={"d-flex flex-wrap justify-content-center"}>
-            {players?.map((players) => (
-                <Card className={"m-2 border border-warning"} style={{ width: '18rem' }}>
-                    <Card.Img variant={"top"} src={players.imagesrc} style={{ width: '8rem' }}/>
-                    <Card.Body>
-                        <Card.Title className="padres-color">{players.name}</Card.Title>
-                        <Card.Text className="padres-color">Jersey #: {players.jersey}</Card.Text>
-                        <Card className={"m-2"} style={{ width: '90%' }}>
-                            <Card.Body>
-                                <Card.Title>Stats</Card.Title>
-                                <Card.Text>Batting Avg: .112</Card.Text>
+            <Container fluid="xl">
+                <Row xs={2} md={2} className="g-4 justify-content-center">
+                    {Array.from({ length: 1 }).map((_, idx) => (
+                        <Col>
+                            <div className={"d-flex flex-wrap justify-content-center"}>
+                                {players?.map((players) => (
+                                    <Card className={"m-2 border border-warning"}>
+                                        <Card.Body>
+                                            <Card.Title className="padres-color">{players.name}</Card.Title>
+                                            <Card.Text className="padres-color">Jersey #: {players.jersey}</Card.Text>
+                                            <Card className={"m-2"}>
+                                                <Card.Body>
+                                                    <Card.Title>Stats</Card.Title>
+                                                    <Card.Text>this it shwere the batting average and other stats go insid ehte crat that is created</Card.Text>
 
-                            </Card.Body>
-                        </Card>
-                        <Card className={"m-2"} style={{ width: '90%' }}>
-                            <Card.Body>
-                                <Card.Title>Stats</Card.Title>
-                                <Card.Text>Strike %: 86%</Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                            <Card className={"m-2"}>
+                                                <Card.Body>
+                                                    <Card.Title>Stats</Card.Title>
+                                                    <Card.Text>Strike %: 86%</Card.Text>
 
-                            </Card.Body>
-                        </Card>
-                    </Card.Body>
-                </Card>
-            ))}
-            </div>
+                                                </Card.Body>
+                                            </Card>
+                                        </Card.Body>
+                                    </Card>
+                                ))}
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
         </>
     )
 }
