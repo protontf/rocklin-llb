@@ -42,7 +42,7 @@ export function PlayerDetails() {
                                 <Card.Img variant={"top"} src={players.imagesrc} />
                                 <Card.Body>
                                     <Card.Title>{players.name}</Card.Title>
-                                    <Card.Text>this.players.id}</Card.Text>
+                                    <Card.Text>{players.id}</Card.Text>
                             </Card.Body>
                         </Card>
                     </Modal.Body>
