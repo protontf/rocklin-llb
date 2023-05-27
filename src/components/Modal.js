@@ -10,18 +10,18 @@ import Container from "react-bootstrap/Container";
 const PlayerModal = ({ id, onClose }) => {
     // Define the data directly within the component or import it from another file
     const data = [
-        { id: 1, name: 'Yggy', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 2, name: 'Levi', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 3, name: 'Dylan', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 4, name: 'Brandon', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 5, name: 'Nick', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 6, name: 'Emmett', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 7, name: 'Kaden', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 8, name: 'Leo', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 9, name: 'Anthony', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 10, name: 'Raylen', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 11, name: 'Jack', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
-        { id: 12, name: 'Zach', avg: '1', hits: '1', walks: '1', singles: '1', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' }
+        { id: 1, name: 'Yggy', avg: '.632', obp: '.759', hits: '12', walks: '10', singles: '9', doubles: '1', triples: '2', imagesrc: '/images/padres_logo.png' },
+        { id: 2, name: 'Levi', avg: '.727', obp: '.813', hits: '16', walks: '10', singles: '13', doubles: '1', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 3, name: 'Dylan', avg: '.560', obp: '.656', hits: '14', walks: '7', singles: '7', doubles: '4', triples: '2', imagesrc: '/images/padres_logo.png' },
+        { id: 4, name: 'Brandon', avg: '.389', obp: '.656', hits: '7', walks: '14', singles: '6', doubles: '1', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 5, name: 'Nick', avg: '.000', obp: '.385', hits: '0', walks: '10', singles: '0', doubles: '0', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 6, name: 'Emmett', avg: '.235', obp: '.552', hits: '4', walks: '12', singles: '3', doubles: '0', triples: '1', imagesrc: '/images/padres_logo.png' },
+        { id: 7, name: 'Kaden', avg: '.350', obp: '.519', hits: '7', walks: '7', singles: '5', doubles: '1', triples: '1', imagesrc: '/images/padres_logo.png' },
+        { id: 8, name: 'Leo', avg: '.357', obp: '.640', hits: '5', walks: '11', singles: '4', doubles: '1', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 9, name: 'Anthony', avg: '.381', obp: '.594', hits: '8', walks: '11', singles: '5', doubles: '3', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 10, name: 'Raylen', avg: '.316', obp: '.500', hits: '6', walks: '7', singles: '6', doubles: '0', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 11, name: 'Jack', avg: '.214', obp: '.577', hits: '3', walks: '12', singles: '3', doubles: '0', triples: '0', imagesrc: '/images/padres_logo.png' },
+        { id: 12, name: 'Zach', avg: '.000', obp: '.000', hits: '0', walks: '0', singles: '0', doubles: '0', triples: '0', imagesrc: '/images/padres_logo.png' }
     ];
 
     const entry = data.find((entry) => entry.id === id);
@@ -62,6 +62,12 @@ const PlayerModal = ({ id, onClose }) => {
                             <Card.Body>
                                 <Card.Title className="padres-color">Batting Avg.</Card.Title>
                                 <Card.Text className="padres-color">{entry.avg}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                        <Card className={"m-2 border border-warning"}>
+                            <Card.Body>
+                                <Card.Title className="padres-color">On Base Percentage</Card.Title>
+                                <Card.Text className="padres-color">{entry.obp}</Card.Text>
                             </Card.Body>
                         </Card>
                         <Card className={"m-2 border border-warning"}>
