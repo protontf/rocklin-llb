@@ -11,7 +11,7 @@ const PlayerCard = ({ id, name, jersey, openModal }) => {
             <Card.Body>
                 <Card.Title className="padres-color">{name}</Card.Title>
                 <Card.Text className="padres-color">{jersey}</Card.Text>
-                <Button onClick={() => openModal(id)}>See Stats</Button>
+                <Button variant={"primary"} onClick={() => openModal(id)}>See Stats</Button>
             </Card.Body>
         </Card>
         </div>
