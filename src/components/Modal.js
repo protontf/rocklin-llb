@@ -37,7 +37,7 @@ const PlayerModal = ({ id, onClose }) => {
     }
 
     return (
-        <Modal show={true} onHide={onClose} dialogClassName={"modal-90w"} aria-labelledby="example-custom-modal-styling-title">
+        <Modal show={true} onHide={onClose} dialogClassName={"modal-90w d-flex flex-wrap justify-content-center"} aria-labelledby="example-custom-modal-styling-title">
             <Modal.Header closeButton>
                 <Modal.Title className="padres-color">{entry.name}</Modal.Title>
             </Modal.Header>
@@ -58,43 +58,43 @@ const PlayerModal = ({ id, onClose }) => {
 
                     <Card.Title className="padres-color">Batting Stats</Card.Title>
                     <CardGroup className={"d-flex flex-wrap justify-content-center"}>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">Batting Avg.</Card.Title>
                                 <Card.Text className="padres-color">{entry.avg}</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">On Base Percentage</Card.Title>
                                 <Card.Text className="padres-color">{entry.obp}</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">Hits</Card.Title>
                                 <Card.Text className="padres-color">{entry.hits}</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">Walks</Card.Title>
                                 <Card.Text className="padres-color">{entry.walks}</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">Singles</Card.Title>
                                 <Card.Text className="padres-color">{entry.singles}</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">Doubles</Card.Title>
                                 <Card.Text className="padres-color">{entry.doubles}</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"m-2 border border-warning"}>
+                        <Card className={"m-2 border border-warning card-width"}>
                             <Card.Body>
                                 <Card.Title className="padres-color">Triples</Card.Title>
                                 <Card.Text className="padres-color">{entry.triples}</Card.Text>

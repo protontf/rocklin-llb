@@ -62,3 +62,7 @@
 .no-border {
   border: none !important;
 }
+.card-width {
+  min-width: 9rem !important;
+  max-width: 16rem !important;
+}
