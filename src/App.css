@@ -15,6 +15,9 @@
 .padres-color {
   color: rgb(255, 196, 37);
 }
+.padres-brown {
+  color: rgb(47, 36, 29);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -55,4 +58,7 @@
 }
 .white-text {
   color: #fff;
+}
+.no-border {
+  border: none !important;
 }
